@@ -13,4 +13,5 @@ Basic portfolio website to demonstrate use of HTML and CSS with responsiveness.
 3. learnt how to make desgin responsive
 
 ### Screenshot
-![ScreenShot of Pacman Game](/screenshots/Portfolio-design-ss-project.PNG)
+![ScreenShot of Portfolio Design](/screenshots/Portfolio-design-ss-project.PNG
+)
