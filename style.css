@@ -6,7 +6,7 @@
     --magenta: #e310cb;
     --aqua: #86fbfb;
     --white: #f7f8fa;
-    --font-size: 1.3rem;
+    --font-size: 1.5rem;
     --mono: "Oxygen mono", monospace;
     --sans: Oxygen, sans-serif;
 }
@@ -55,8 +55,9 @@ a:hover {
 }
 
 #intro p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5;
+    letter-spacing: 1px;
 }
 
 #intro .name {
@@ -194,6 +195,11 @@ footer ul {
     font-size: 3rem;
 }
 
+q {
+    font-size: smaller;
+    text-align: center;
+}
+
 #projects {
     padding: 4rem 1rem;
 }
@@ -296,4 +302,94 @@ footer ul {
     #projects .reverse ul {
         justify-content: flex-start;
     }
+
+    .cards-wrapper {
+        grid-template-columns: 1fr;
+      }
+}
+
+.card {
+    background-color: #171321;
+    height: 13em;
+    width: 10em;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 0 5em -1em black;
+    border: 5px solid #ccc;
+  }
+
+  .card p{
+    color: white;
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+
+  .card a:hover {
+    font-style: italic;
+    border-bottom: 1px solid var(--aqua);
+  }
+
+    .card h1{
+        color: aquamarine;
+        margin-bottom: 1.5rem;
+    }
+  .cards-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    padding: 3rem;
+    margin: 0 auto;
+    width: max-content;
+  }
+  .card:hover .tags .tag {
+    background: #3c3163;
+    color: white;
+  }
+
+ 
+  pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 6px;
+  }
+
+  .blog{
+    padding: 20px;
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .blog pre code {
+    color: #0d314b;
+  }
+
+  .blog-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 6px;
+    text-align: center;
+    gap: 4px;
+  }
+
+@media (max-width: 900px){
+    .cards-wrapper{
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        
+    }
+
 }

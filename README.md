@@ -1,4 +1,4 @@
-# Blog Post
+# My Website
 Basic portfolio website to demonstrate use of HTML and CSS with responsiveness.
 
 ### Technology used
